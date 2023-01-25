@@ -19,11 +19,11 @@ def load_data():
 
     data = data.to_numpy()
 
-    headers = np.delete(headers, 7)
-    headers = np.delete(headers, 10)
+    headers = np.delete(headers, 7) #Removing country-year as we already have it seperatly
+    headers = np.delete(headers, 10) #Removing generation
 
-    data = np.delete(data, 7, 1)
-    data = np.delete(data, 10, 1)
+    data = np.delete(data, 7, 1) #Removing country-year as we already have it seperatly
+    data = np.delete(data, 10, 1) #Removing generation
 
 
 
